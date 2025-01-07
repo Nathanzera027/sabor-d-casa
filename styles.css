@@ -47,8 +47,8 @@ nav a {
 }
 
 .hero {
-    background-image: url("img/restaurante.jpg");
-    background-size: cover;
+    background-image: url("img/fundo.jpg");
+    background-size: auto;
     color: var(--color-white);
     min-height: 75vh;
     padding: 10rem 0;
@@ -64,7 +64,7 @@ nav a {
     font-weight: 700;
     color: #e85b04d2;
     margin-bottom: 3rem;
-    margin-top: 11rem;
+    margin-top: 18rem;
     margin-left: 4.5rem;
 }
 
@@ -75,8 +75,8 @@ nav a {
     display: inline-block;
     font-size: 1.25rem;
     font-weight: 700;
-    margin-top: 4.5cm;
-    padding: .75rem 1.5rem;
+    margin-top: 2cm;
+    padding: .90rem 2rem;
     text-decoration: none;
     text-align: center;
 }
@@ -150,7 +150,7 @@ footer {
 }
 
 #contact {
-    background-color: #E9E2D2;
+    background-color: #ffd7bf;
 }
 
 address a {
