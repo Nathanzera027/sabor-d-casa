@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #ffa500;
+    --color-dark: #232323;
+    --color-light: #eaeaea;
+    --color-white: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: var(--color-primary);
+}
+
+header {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 1.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.hero {
+    background-image: url("img/restaurante.jpg");
+    background-size: cover;
+    color: var(--color-white);
+    min-height: 75vh;
+    padding: 10rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #e85b04d2;
+    margin-bottom: 3rem;
+    margin-top: 11rem;
+    margin-left: 4.5rem;
+}
+
+.cta-button {
+    background-color: var(--color-primary);
+    border-radius: .5rem;
+    color: var(--color-dark);
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 4.5cm;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+section:not(#home) {
+    padding: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-list>li {
+    background-color: var(--color-light);
+    border-radius: .5rem;
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 1.5rem;
+    height: 30rem;
+    width: 28rem;
+    text-align: left;
+}
+
+.menu-list img {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.menu-list h3,
+.menu-list p {
+    padding: 1rem 1.25rem 0;
+}
+
+#about {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.8) 100%),
+        url("img/sobre.jpg");
+    background-size: cover;
+    color: var(--color-white);
+}
+
+address {
+    margin: 2rem 0;
+    font-style: italic;
+}
+
+address>* {
+    display: inline-block;
+    margin: 1.5rem;
+    text-align: left;
+}
+
+footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 2rem;
+    text-align: center;
+}
+
+#contact {
+    background-color: #E9E2D2;
+}
+
+address a {
+    color: #e65100;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+address a:hover {
+    color: #ff6f00;
+}
