@@ -34,10 +34,12 @@ header {
 nav ul {
     list-style: none;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav li {
-    display: inline;
     margin: 0 1.5rem;
 }
 
@@ -48,10 +50,11 @@ nav a {
 
 .hero {
     background-image: url("img/fundo.jpg");
-    background-size: auto;
+    background-size: cover;
+    background-position: center;
     color: var(--color-white);
     min-height: 75vh;
-    padding: 10rem 0;
+    padding: 5rem 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -60,12 +63,10 @@ nav a {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #e85b04d2;
-    margin-bottom: 3rem;
-    margin-top: 18rem;
-    margin-left: 4.5rem;
+    margin-bottom: 2rem;
 }
 
 .cta-button {
@@ -75,38 +76,39 @@ nav a {
     display: inline-block;
     font-size: 1.25rem;
     font-weight: 700;
-    margin-top: 2cm;
-    padding: .90rem 2rem;
+    padding: .75rem 1.5rem;
     text-decoration: none;
-    text-align: center;
 }
 
 section:not(#home) {
-    padding: 4rem;
+    padding: 4rem 1rem;
     text-align: center;
 }
 
 h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .menu-list {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .menu-list>li {
     background-color: var(--color-light);
     border-radius: .5rem;
     box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    margin: 1.5rem;
-    height: 30rem;
-    width: 28rem;
+    margin: 1rem;
+    height: auto;
+    width: 90%;
+    max-width: 25rem;
     text-align: left;
 }
 
@@ -115,19 +117,18 @@ p {
     border-top-right-radius: .5rem;
     object-fit: cover;
     width: 100%;
+    height: auto;
 }
 
 .menu-list h3,
 .menu-list p {
-    padding: 1rem 1.25rem 0;
+    padding: 1rem;
 }
 
 #about {
-    background-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 0.8) 100%),
-        url("img/sobre.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("img/sobre.jpg");
     background-size: cover;
+    background-position: center;
     color: var(--color-white);
 }
 
@@ -137,15 +138,14 @@ address {
 }
 
 address>* {
-    display: inline-block;
-    margin: 1.5rem;
-    text-align: left;
+    display: block;
+    margin: 1rem 0;
 }
 
 footer {
     background-color: var(--color-dark);
     color: var(--color-white);
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
 }
 
@@ -161,4 +161,21 @@ address a {
 
 address a:hover {
     color: #ff6f00;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .menu-list>li {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu-list>li {
+        width: 28rem;
+    }
 }
